@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    div id="tooltip" class="tooltip">
+        <span class="tooltiptext">Tooltip text</span>
+    </div>
+    <h1> User feedback Form</h1>
+   
+    <form action="/submit-feedback" method="post">
+         
+        <Div> class ="form-group" data-tooltip="Please enter your name">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </Div>
+        <Div> class ="form-group" data-tooltip="Please enter your email">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </Div>
+        <Div> class ="form-group" data-tooltip="Please enter your feedback">
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
+        </Div>
+        <input type="submit" value="Submit">
+    </form>
+    <script>screen= "CP_1.js"</script>
+</body>
+</html>

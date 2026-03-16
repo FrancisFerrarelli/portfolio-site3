@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f2f2f2;
+    --text-color: #333;
+    --border-radius: 5px;
+    --padding: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"], textarea {
+    padding: var(--padding);
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+}
+button {
+    padding: var(--padding);
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+.feedback-list {
+    margin-top: 25px;
+}
+.feedback-item {
+    background-color: var(--secondary-color);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    margin-bottom: 15px;
+}
+.feedback-item h3 {
+    margin: 0 0 10px 0;
+}
+.feedback-item p {
+    margin: 0;
+}
+.feedback-item .email {
+    font-size: 0.9em;
+    color: #777;
+}
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: var(--padding);
+    }
+}
